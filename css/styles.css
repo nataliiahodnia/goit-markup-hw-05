@@ -560,54 +560,24 @@ main {
  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-.form {
-  display: flex;
-  gap: 24px;
-  max-width: 300px;
-}
+
 
 input {
 
   font-family: inherit;
 }
 
+.form-item {
+  margin-left: 80px;
+}
+
 .form {
   display: flex;
-  justify-content: space-between;
-  margin-left: 80px;
-  align-items: flex-end;
-  flex-direction: row;
 }
-
-.form-text {
-  display: flex;
-  margin-bottom: 16px;
-}
-
-.form-input {
-  display: flex;
-  justify-content: space-between;
-  align-self:flex-end;
-  border: 1px solid #fff;
-  border-radius: 4px;
-  width: 264px;
-  height: 40px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 200%;
-  letter-spacing: 0.04em;
-  padding: 16px;
-  background-color: #2E2F42;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-}
-
-.form-input:hover::placeholder, 
-.form-input:focus::placeholder {
-  color:#4D5AE5;
 }
 
 .form-label {
-  display: block;
+  gap: 24px;
   width: 453px;
   height: 80px;
   font-weight: 500;
@@ -618,26 +588,62 @@ input {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
+.form-text {
+  margin-bottom: 16px;
+  font-weight: 500; 
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.form-input {
+  display: flex;
+  justify-content: space-between;
+  align-self:flex-end;
+  border: 1px solid #fff;
+  background-color: transparent; 
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding: 16px;
+  background-color: #2E2F42;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.form-input:hover::placeholder, 
+.form-input:focus::placeholder {
+  color:#ffffff;
+}
 
 
 .form-button {
   display: flex;
-  justify-content: space-between;
-  align-content: flex-end;
+  justify-content: center;
+  align-content: center;
   background-color: #4D5AE5;
+  font-family: "Roboto", sans-serif 
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.04em;
-  text-align: center;
-  color: #fff;
+  color: #ffffff;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
   padding: 8px 24px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
-  gap: 16px;
+  margin-left:24px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-button { 
+  margin-left: 16px;
 }
 
 .form-button:hover {
