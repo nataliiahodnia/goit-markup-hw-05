@@ -464,32 +464,66 @@
         </div>
       </div>
     </footer>
-    <div class="window">
+    <div class="modal-background">
       <div class="modal-window">
+        <button class="modal-button" type="button">
+          <svg class="modal-x" width="8px" height="8px">
+            <use href="/images/icons.svg#icon-x"></use>
+          </svg>
+        </button>
         <p class="modal-window-text">Leave your contacts and we will call you back</p>
         <form class="form-modal" name="issue_report_form" autocomplete="off">
-          <label class="form-label-modal">
-            Your name
-            <input
-              class="form-input-modal"
-              type="text"
-              name="username"
-              placeholder="Andrew Berger"
-              autofocus
-            />
-          </label>
-          <label class="form-label-mpdal">
-            Topic
-            <input
-              class="form-input-modal"
-              type="text"
-              name="topic"
-              placeholder="Short issue summary"
-            />
-          </label>
-        <button class="modal-button" type="button">
-          Send
-        </button>
+          <div class="form-item-first">
+            <label for="user-name" class="form-label-modal">
+              Name
+              <div class="form-item-contn">
+                <input
+                  class="form-input-modal"
+                  id="user-name"
+                  type="text"
+                  name="username"
+                  autofocus
+                />
+                <svg class="icon-modul-1" width="18" height="24">
+                  <use href="./images/icons.svg#icon-modul-1"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+          <div class="form-item-first">
+            <label for="user-name" class="form-label-modal">
+              Phone
+              <div class="form-item-contn">
+                <input
+                  class="form-input-modal"
+                  id="phone"
+                  type="text"
+                  name="username"
+                  autofocus
+                />
+                <svg class="icon-modul-2" width="18" height="24">
+                  <use href="./images/icons.svg#icon-modul-2"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+          <div class="form-item-first">
+            <label for="user-name" class="form-label-modal">
+              Email
+              <div class="form-item-contn">
+                <input
+                  class="form-input-modal"
+                  id="Email"
+                  type="text"
+                  name="username"
+                  autofocus
+                />
+                <svg class="icon-modul-3" width="18" height="24">
+                  <use href="./images/icons.svg#icon-modul-3"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
       </div>
     </div>
   </body>
