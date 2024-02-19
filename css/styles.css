@@ -1,6 +1,7 @@
 :root {
   --color-white: #fff;
   --color-ocean: #404bbf;
+  --color-cloud: #F4F4FD;
 }
 
 body {
@@ -810,6 +811,8 @@ input {
 
 .check-box .input:checked {
 background-color: var(--color-ocean);
+border: none;
+fill: var(--color-cloud);
 }
 
 .link-privacy {
