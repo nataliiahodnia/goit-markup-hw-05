@@ -811,14 +811,17 @@ background-color: #404bbf;
 }
 
 .butt-send {
-  display: block; 
+  display: block;
+  margin: auto;
+  border-radius: 4px;
+  padding: 16px 32px;
   min-width: 169px;
   height: 56px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  line-height: 1.5;
+  letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
   background-color: #4D5AE5;
