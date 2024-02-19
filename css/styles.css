@@ -599,6 +599,7 @@ input {
   justify-content: space-between;
   align-self:flex-end;
   border: 1px solid #fff;
+  color: #ffffff;
   background-color: transparent; 
   border-radius: 4px;
   width: 264px;
@@ -608,12 +609,10 @@ input {
   line-height: 2;
   letter-spacing: 0.04em;
   padding: 16px;
-  background-color: #2E2F42;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
-.form-input:hover::placeholder, 
-.form-input:focus::placeholder {
+.form-input::placeholder{
   color:#ffffff;
 }
 
