@@ -1,7 +1,12 @@
+:root {
+  --color-white: #fff;
+  --color-ocean: #404bbf;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
-  background-color: #fff;
+  background-color: var(--color-white);
 }
 
 .visually-hidden {
@@ -132,7 +137,7 @@ li {
 
 .page-nav .link:hover,
 .page-nav .link:focus {
-  color: #404bbf;
+  color: var(--color-ocean);
 }
 
 .page-item .link {
@@ -140,11 +145,11 @@ li {
 }
 
 .menu .link {
-  color: #404bbf;
+  color: var(--color-ocean);
 }
 
 /* .menu:hover .link::after {
-  background-color: #404bbf;
+  background-color: var(--color-ocean);
 } */
 
 .menu .link::after {
@@ -155,7 +160,7 @@ li {
   position: absolute;
   bottom: -1px;
   height: 4px;
-  background-color: #404bbf;
+  background-color: var(--color-ocean);
 }
 
 .contacts {
@@ -175,11 +180,11 @@ li {
 
 .contacts .link:hover,
 .link:focus {
-  color: #404bbf;
+  color: var(--color-ocean);
 }
 
 main {
-  background-color: #fff;
+  background-color: var(--color-white);
 }
 
 /* section baner */
@@ -205,7 +210,7 @@ main {
 }
 
 .page-title {
-  color: #fff;
+  color: var(--color-white);
   text-align: center;
   max-width: 496px;
   font-size: 56px;
@@ -217,7 +222,7 @@ main {
 
 .button {
   background-color: #4d5ae5;
-  color: #fff;
+  color: var(--color-white);
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -234,15 +239,15 @@ main {
 }
 
 .button:hover {
-  background-color: #404bbf;
+  background-color: var(--color-ocean);
 }
 
 .button:focus {
-  background-color: #404bbf;
+  background-color: var(--color-ocean);
 }
 
 .company-features {
-  background-color: #fff;
+  background-color: var(--color-white);
   display: flex;
   gap: 24px;
 }
@@ -313,7 +318,7 @@ main {
 
 .social-links .link:hover,
 .social-links .link:focus {
-  background-color: #404bbf;
+  background-color: var(--color-ocean);
 }
 
 .list-item-cont {
@@ -322,7 +327,7 @@ main {
 }
 
 .our-team .list-item {
-  background-color: #ffffff;
+  background-color: var(--color-white);
   width: calc((100% - 24px * 3) / 4);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
@@ -359,7 +364,7 @@ main {
 }
 
 .our-portfolio {
-  background-color: #fff;
+  background-color: var(--color-white);
 }
 
 .portfolio-item-link {
@@ -508,7 +513,7 @@ main {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: var(--color-white);
   margin-bottom: 16px;
 }
 
@@ -577,7 +582,7 @@ input {
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.02em;
-  color: #fff;
+  color: var(--color-white);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
@@ -587,15 +592,15 @@ input {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: var(--color-white);
 }
 
 .form-input {
   display: flex;
   justify-content: space-between;
   align-self: flex-end;
-  border: 1px solid #fff;
-  color: #ffffff;
+  border: 1px solid var(--color-white);
+  color: var(--color-white);
   background-color: transparent;
   border-radius: 4px;
   width: 264px;
@@ -609,7 +614,7 @@ input {
 }
 
 .form-input::placeholder {
-  color: #ffffff;
+  color: var(--color-white);
 }
 
 .form-button {
@@ -622,7 +627,7 @@ input {
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: var(--color-white);
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -637,11 +642,11 @@ input {
 }
 
 .form-button:hover {
-  background-color: #404bbf;
+  background-color: var(--color-ocean);
 }
 
 .form-button:focus {
-  background-color: #404bbf;
+  background-color: var(--color-ocean);
 }
 
 .modal-background {
@@ -705,9 +710,9 @@ input {
 
 .modal-button:hover,
 .modal-button:focus {
-  background-color:#404bbf;
+  background-color:var(--color-ocean);
   border: none;
-  fill: #fff;
+  fill: var(--color-white);
 }
 
 .modal-x {
@@ -795,6 +800,7 @@ input {
   justify-content: center; 
   align-items: center;
   fill: transparent;
+  margin-right: 8px;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4); 
@@ -803,7 +809,7 @@ input {
 }
 
 .check-box .input:checked {
-background-color: #404bbf;
+background-color: var(--color-ocean);
 }
 
 .link-privacy {
@@ -822,10 +828,13 @@ background-color: #404bbf;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: var(--color-white);
   cursor: pointer;
   background-color: #4D5AE5;
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.check-box input[type="checkbox"]:checked + .user-check span {
+  background-color: var(--color-ocean);
+}
